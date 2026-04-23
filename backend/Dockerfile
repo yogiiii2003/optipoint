@@ -16,8 +16,10 @@ ENV PATH=/root/.local/bin:$PATH \
     PYTHONDONTWRITEBYTECODE=1 \
     PYTHONPATH=/app
 
+# Install spaCy model system-wide in the runner stage (guaranteed on sys.path)
+RUN python -m spacy download en_core_web_sm
+
 # Train the optimality model so model.pkl is baked into the image.
-# Falls back gracefully at runtime if this is skipped — the endpoint will 503.
 RUN python -m app.ml.train
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
