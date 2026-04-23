@@ -2,7 +2,7 @@
 
 > **AI-powered location intelligence** — find optimal places to live by combining natural language queries, OpenStreetMap geospatial data, and machine learning.
 
-**Live demo:** _coming soon_ · **Status:** 🚧 refactor in progress (v1 → v2)
+**Live demo:** [optipoint.vercel.app](https://optipoint.vercel.app) · **API:** [optipoint-api.onrender.com/docs](https://optipoint-api.onrender.com/docs)
 
 ![architecture](docs/architecture.png) <!-- TODO: add diagram -->
 
