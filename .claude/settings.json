@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/python -c \"from app.main import app; print\\('boot OK:', [r.path for r in app.routes]\\)\")"
+    ]
+  }
+}

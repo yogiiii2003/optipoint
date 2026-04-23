@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "leaflet/dist/leaflet.css";
+
+html,
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+.leaflet-container {
+  @apply rounded-lg shadow-sm;
+  height: 100%;
+  width: 100%;
+}
